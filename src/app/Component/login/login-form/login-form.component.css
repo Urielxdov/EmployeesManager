@@ -1,0 +1,22 @@
+.contenedor_logins {
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.logins_campo {
+    display: block;
+    padding: 5%;
+    width: 100%;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.campo_item {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+

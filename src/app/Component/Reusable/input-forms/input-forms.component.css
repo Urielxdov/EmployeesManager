@@ -1,0 +1,25 @@
+.item-entrada {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    margin: 15px 0;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.item-entrada img {
+    width: 20px;
+    margin: 0 10px;
+}
+
+.item-entrada input{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+}
+
+.item-entrada input:focus {
+    outline: none;
+}
