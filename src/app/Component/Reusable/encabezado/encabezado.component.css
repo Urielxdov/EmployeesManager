@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 3%;
+    background-color: rgb(39, 57, 152);
+}
+
+.header_funciones {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+.funciones_titulo {
+    display: inline-block;
+    font-size: 19px;
+    padding-right: 5px;
+    border-right: 1px solid #aaa;
+}
+
+.funciones_navegacion {
+    display: flex;
+    gap: 10px;
+}
+
+.funciones_navegacion a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.header_usuario {
+    display: flex;
+    align-items: center;
+}
+
+.header_usuario {
+    border-radius: 100%;
+    padding: 8px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.header_usuario img{
+    width: 20px;
+}
