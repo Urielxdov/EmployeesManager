@@ -10,6 +10,7 @@ import { UsuarioRegistradoComponent } from './Component/login/usuario-registrado
 import { UsuarioNuevoComponent } from './Component/login/usuario-nuevo/usuario-nuevo.component';
 import { InputFormsComponent } from './Component/Reusable/input-forms/input-forms.component';
 import { BotonComponent } from './Component/Reusable/boton/boton.component';
+import { FooterComponent } from './Component/Reusable/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BotonComponent } from './Component/Reusable/boton/boton.component';
     UsuarioRegistradoComponent,
     UsuarioNuevoComponent,
     InputFormsComponent,
-    BotonComponent
+    BotonComponent,
+    FooterComponent
     
   ],
   imports: [
