@@ -18,5 +18,10 @@
     margin: 0 auto;
 }
 
-
+@media (max-width : 720px) {
+    .contenedor_logins {
+        display: flex;
+        flex-direction: column;
+    }
+}
 

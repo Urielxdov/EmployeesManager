@@ -9,6 +9,7 @@
 
 .header_funciones {
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
     justify-content: center;
     align-items: center;
@@ -22,8 +23,14 @@
     border-right: 1px solid #aaa;
 }
 
+.funciones_titulo:hover {
+    cursor: pointer;
+}
+
 .funciones_navegacion {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -45,4 +52,27 @@
 
 .header_usuario img{
     width: 20px;
+}
+
+@media (max-width : 720px) {
+    .header {
+        flex-direction: column;
+    }
+    .funciones_titulo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-bottom: 1px solid #FFF;
+        width: 100%;
+    }
+    .header_usuario {
+        display: none;
+    }
+    .header_funciones {
+        flex-direction: column;
+    }
+    .funciones_navegacion {
+        flex-direction: column;
+    }
 }

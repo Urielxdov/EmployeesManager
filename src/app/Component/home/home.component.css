@@ -1,0 +1,35 @@
+.informacion {
+    padding: 20px;
+    gap: 10px;
+    height: 40vh;
+    display: flex;
+}
+
+.informacion_datos {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 10%;
+    flex-direction: column;
+}
+
+.informacion_vinculos {
+    flex-grow: 2;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacion_vinculos button {
+    width: 120px;
+    height: 30px;
+    background-color: rgb(25, 38, 105);
+    color: #FFF;
+    border-radius: 10px;
+}
+
+.informacion_vinculos button:hover {
+    cursor: pointer;
+}

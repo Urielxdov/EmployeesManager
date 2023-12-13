@@ -1,0 +1,22 @@
+<section>
+  <section class="contenedor_tabla">
+    <div class="tabla-cabecera">
+      <h3 *ngFor="let apartado of tablaApartados">{{ apartado }}</h3>
+    </div>
+
+    <div *ngFor="let item of gastosUsuario; let i = index">
+      <p>{{ i + 1 }}</p>
+      <p>{{ item.gasto }}</p>
+      <p>{{ item.monto }}</p>
+      <p>{{ item.cantidad }}</p>
+      <p>{{ item.monto * item.cantidad }}</p>
+    </div>
+
+    <div>
+      <h3>Total</h3>
+      <h3>{{ totalGastos() }}</h3>
+    </div>
+  </section>
+
+  <app-agregar-gasto (registrarGasto)="agregarGasto($event)"></app-agregar-gasto>
+</section>

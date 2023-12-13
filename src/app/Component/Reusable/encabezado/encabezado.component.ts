@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { UsuarioService } from 'src/app/service/usuario.service';
 
 @Component({
   selector: 'app-encabezado',
@@ -7,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class EncabezadoComponent {
   nombreApp:string = "Probando";
+  constructor(private router : Router, private usuarioService : UsuarioService) {}
+
+  irInicio() {
+    if(this.usuarioService.usuario()) {
+      this.router.navigate(['/home'])
+    } else {
+      this.router.navigate(['/'])
+    }
+    
+  }
 }

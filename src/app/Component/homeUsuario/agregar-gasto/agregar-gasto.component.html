@@ -1,0 +1,35 @@
+<section>
+  <form action="" class="campo_item">
+    <div>
+
+      <app-input-forms
+        placeholder="Ingrese el nombre del gasto"
+        [valor]="gasto"
+        name="gasto"
+      ></app-input-forms>
+    </div>
+
+    <div>
+      <h3>Monto</h3>
+      <app-input-forms
+        placeholder="Costo monetario"
+        [valor]="monto"
+        name="monto"
+      ></app-input-forms>
+    </div>
+
+    <div>
+      <h3>Cantidad</h3>
+      <app-input-forms
+        placeholder="Cantidad en unidades"
+        [valor]="cantidad"
+        name="cantidad"
+      ></app-input-forms>
+    </div>
+  </form>
+  <app-boton
+    contenidoBoton="Registrar"
+    colorFondo="rgb(0, 117, 31)"
+    [evento]="ejecutarEvento"
+  ></app-boton>
+</section>

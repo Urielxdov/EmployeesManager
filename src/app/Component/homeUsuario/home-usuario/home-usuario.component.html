@@ -1,0 +1,11 @@
+<section *ngIf="datosUsuario" class="contenedor">
+  <div class="contenedor_encabezado">
+    <h2>Bienvenido {{ datosUsuario.nombre }} {{ datosUsuario.apellido }}</h2>
+  </div>
+
+  <app-tabla-gastos></app-tabla-gastos>
+
+  <app-boton contenidoBoton="Ingresar" colorFondo="rgb(33, 66, 236)" ></app-boton>
+
+
+</section>

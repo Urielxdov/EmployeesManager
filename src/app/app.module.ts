@@ -11,6 +11,13 @@ import { UsuarioNuevoComponent } from './Component/login/usuario-nuevo/usuario-n
 import { InputFormsComponent } from './Component/Reusable/input-forms/input-forms.component';
 import { BotonComponent } from './Component/Reusable/boton/boton.component';
 import { FooterComponent } from './Component/Reusable/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './Component/home/home.component';
+import { HomeUsuarioComponent } from './Component/homeUsuario/home-usuario/home-usuario.component';
+import { FormsModule } from '@angular/forms';
+import { UsuarioService } from './service/usuario.service';
+import { TablaGastosComponent } from './Component/homeUsuario/tabla-gastos/tabla-gastos.component';
+import { AgregarGastoComponent } from './Component/homeUsuario/agregar-gasto/agregar-gasto.component';
 
 @NgModule({
   declarations: [
@@ -22,14 +29,19 @@ import { FooterComponent } from './Component/Reusable/footer/footer.component';
     UsuarioNuevoComponent,
     InputFormsComponent,
     BotonComponent,
-    FooterComponent
-    
+    FooterComponent,
+    HomeComponent,
+    HomeUsuarioComponent,
+    TablaGastosComponent,
+    AgregarGastoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [UsuarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
